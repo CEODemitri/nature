@@ -23,7 +23,7 @@
 
 </head>
 <body>
-    <!-- header -->
+    <!-- navbar start -->
     <header class="header" id="header">
 
         <nav class="navbar container">
@@ -62,6 +62,7 @@
                 </ul>
             </div>
 
+            <!-- light and dark switch -->
             <div class="list list-right">
                 <button class="btn place-items-center" id="theme-toggle-btn">
                     <i class="ri-sun-line sun-icon"></i>
@@ -86,22 +87,23 @@
 
     </header>
 
+    <!-- this div is only visible when the search icon in the navbar is clicked -->
     <div class="search-form-container container" id="search-form-container">
         <div class="form-container-inner">
             <form action="" class="form">
-                <input type="text" name="" class="form-input" placeholder="Search Right Here">
+                <input type="text" name="" class="form-input" placeholder="Search our Amazing Articles Here">
                 <button class="btn form-btn" type="submit">
                     <i class="ri-search-line"></i>
                 </button>
             </form>
-            <span class="form-note">Or Press Esc to Close.</span>
+            <span class="form-note">Press Esc to Close.</span>
         </div>
 
         <button class="btn form-close-btn place-items-center" id="form-close-btn">
             <i class="ri-close-line"></i>
         </button>
     </div>
-
+<!-- navbar end -->
 
     <!-- Top articles -->
     <section class="featured-articles section-header-offset">
@@ -111,15 +113,15 @@
             <div class="featured-content d-grid">
                 <div class="headline-banner">
                     <h3 class="headline fancy-border">
-                        <span class="place-items-center">Headliners</span>
+                        <span class="place-items-center">Top Articles</span>
                     </h3>
-                    <span class="headline-description">ceoDemitri is up to it again...</span>
+                    <span class="headline-description">searching thru the mind of ceoDemitri...</span>
                 </div>
 
                 <!-- article 1 link -->
                 <a href="./posts/our_skies.html" class="article featured-article featured-article-1">
-                    <img src="./assets/images/nebula.jpg" alt="" class="article-image">
-                    <span class="article-category">Astrology</span>
+                    <img src="./assets/images/meandkite.jpg" alt="" class="article-image">
+                    <span class="article-category">Kosmos</span>
 
                     <div class="article-data-container">
 
@@ -152,8 +154,8 @@
 
                 <!-- article 3 link -->
                 <a href="./post.html" class="article featured-article featured-article-3">
-                    <img src="./assets/images/swim.jpg" alt="" class="article-image">
-                    <span class="article-category">Journeology</span>
+                    <img src="./assets/images/oceanview.jpg" alt="" class="article-image">
+                    <span class="article-category">Waters</span>
 
                     <div class="article-data-container">
 
@@ -168,14 +170,16 @@
                 </a>
             </div>
 
-            <!-- Sidebar -->
+            <!-- Sidebar: Cool Reads -->
+            <!-- this area is designed for five articles: three visible -->
+            <!-- i have muted the other articles in this section, to test the responsiveness of the container and to add content as it exists. no articles exist there yet. -->
             <div class="sidebar d-grid">
                 <h3 class="title featured-content-title">Cool Reads</h3>
 
                 <a href="#" class="trending-news-box">
                     <div class="trending-news-image-box">
                         <span class="trending-number place-items-center">01</span>
-                        <img src="./assets/images/trending/trending_1.jpg" alt="" class="article-image">
+                        <img src="./assets/images/trending/coder.jpg" alt="" class="article-image">
                     </div>
 
                     <div class="trending-news-data">
@@ -223,7 +227,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="trending-news-box">
+                <!-- <a href="#" class="trending-news-box">
                     <div class="trending-news-image-box">
                         <span class="trending-number place-items-center">04</span>
                         <img src="./assets/images/trending/trending_1.jpg" alt="" class="article-image">
@@ -255,7 +259,7 @@
 
                         <h3 class="title article-title">Sample</h3>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
     </section>
@@ -634,3 +638,4 @@
 </body>
 </html>
 
+<!-- start to create the folder structure for posts -->
