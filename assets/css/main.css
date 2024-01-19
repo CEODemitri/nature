@@ -3,7 +3,7 @@
 :root {
     --light-color: #fff;
     --light-color-alt: #afb6cd;
-    --primary-background-color: hsl(189, 24%, 17%);
+    --primary-background-color: hsl(190, 55%, 13%);
     --secondary-background-color: hsl(188, 94%, 6%);
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
