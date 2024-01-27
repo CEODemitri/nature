@@ -3,15 +3,15 @@
 :root {
     --light-color: #fff;
     --light-color-alt: #afb6cd;
-    --primary-background-color: hsl(190, 55%, 13%);
-    --secondary-background-color: hsl(188, 94%, 6%);
+    --primary-background-color: hsl(191, 21%, 75%);
+    --secondary-background-color: hsl(188, 11%, 40%);
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
     --gradient-color: linear-gradient(
         115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b
     );
-    --transparent-light-color: rgba(255, 255, 255, 0.05);
-    --transparent-dark-color: rgba(0, 0, 0, .75);
+    --transparent-light-color: hsl(187, 33%, 74%);
+    --transparent-dark-color: hsl(188, 11%, 40%);
     --heading-font: 'Lobster';
     --page-font: 'Raleway';
     --font-size-xsm: 1.2rem;
@@ -41,7 +41,6 @@ html {
 body {
     font-family: var(--page-font);
     font-size: var(--font-size-sm);
-    color: var(--light-color-alt);
     background-color: var(--primary-background-color);
     letter-spacing: 1px;
     transition: background-color .25s, color .25s;
@@ -132,7 +131,6 @@ body.light-theme {
 
 .logo {
     font-size: var(--font-size-md);
-    color: var(--light-color);
 }
 
 .menu {
@@ -168,12 +166,12 @@ body.light-theme {
 .btn {
     cursor: pointer;
 }
-
+/* 
 .list-link:hover,
 .btn:hover,
 .btn:hover span {
     color: var(--light-color);
-}
+} */
 
 .moon-icon {
     display: none;
@@ -298,7 +296,6 @@ body.light-theme {
 }
 
 .headline {
-    color: var(-light-color);
     font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
@@ -355,7 +352,6 @@ body.light-theme {
     padding: 1rem;
     font-size: 1rem;
     background-color: var(--primary-background-color);
-    color: var(--light-color);
     text-transform: uppercase;
     z-index: 10;
     border-radius: 10px 0 10px 0;
@@ -379,12 +375,12 @@ body.light-theme {
 
 .article:hover .article-data-spacer {
     background-color: var(--hover-light-color);
-    color: var(--hover-light-color);
+    /* color: var(--hover-light-color); */
 }
 
-.article:hover .article-title {
+/* .article:hover .article-title {
     color: var(--hover-light-color);
-}
+} */
 
 .article-data {
     display: flex;
@@ -399,10 +395,6 @@ body.light-theme {
     height: .5rem;
     background-color: var(--light-color-alt);
     transform: rotate(45deg);
-}
-
-.title {
-    color: var(--light-color);
 }
 
 .article-title {
@@ -463,7 +455,6 @@ body.light-theme {
     width: 3rem;
     height: 3rem;
     background-color: var(--secondary-background-color);
-    color: var(--light-color);
     border-radius: 50%;
 }
 
