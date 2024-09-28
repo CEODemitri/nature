@@ -1,233 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature | Blog about Our World</title>
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Remix Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      rel="stylesheet"
+    />
 
     <!-- swiper,js -->
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
 
     <!-- my stylesheet -->
-    <link
-        rel="stylesheet"
-        href="./assets/css/main.css"
-    />
-
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
     <!-- navbar start -->
     <header class="header" id="header">
-
-        <nav class="navbar container">
-
-            <a href=".index.html">
-                <h2 class="logo font">Nature</h2>
-            </a>
-
-            <!-- wrap the list in a div to make responsiveness simple -->
-            <div class="menu" id="menu">
-                <ul class="list">
-
-                    <li class="list-item">
-                        <a href="#" class="list-link current">Home</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="./pages/categories/index.html" class="list-link">Categories</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="./pages/gallery/index.html" class="list-link">Gallery</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">About</a>
-                    </li>
-
-                    <li class="list-item screen-lg-hidden">
-                        <a href="#" class="list-link">Sign In</a>
-                    </li>
-
-                    <li class="list-item screen-lg-hidden">
-                        <a href="#" class="list-link">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- light and dark switch -->
-            <div class="list list-right">
-                <button class="btn place-items-center" id="theme-toggle-btn">
-                    <i class="ri-sun-line sun-icon"></i>
-                    <i class="ri-moon-line moon-icon"></i>
-                </button>
-
-                <button class="btn place-items-center" id="search-icon">
-                    <i class="ri-search-line"></i>
-                </button>
-
-                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
-                    <i class="ri-menu-3-line open-menu-icon"></i>
-                    <i class="ri-close-line close-menu-icon"></i>
-                </button>
-
-                <a href="#" class="list-link screen-sm-hidden">Sign In</a>
-                <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
-                    <span>Sign Up</span>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a href="/">
+                    <h2 class="logo font">Nature</h2>
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/categories/index.html" class="nav-link">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/gallery/index.html" class="nav-link">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./pages/about/index.html" class="nav-link">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
             </div>
         </nav>
-
     </header>
+    <!-- navbar end -->
+
+    <div class="py-5 hero">
+        <h1 class="display-1 fw-bold">Peace of Mind</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+                popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+                <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+            </div>
+            <div class="headline-banner">
+                <h3 class="headline fancy-border">
+                    <span class="place-items-center">Top Articles</span>
+                </h3>
+                <span class="headline-description">searching thru the mind of ceoDemitri...</span>
+            </div>
+        </div>
+    </div>
 
     <!-- this div is only visible when the search icon in the navbar is clicked -->
     <div class="search-form-container container" id="search-form-container">
-        <div class="form-container-inner">
-            <form action="" class="form">
-                <input type="text" name="" class="form-input" placeholder="Search our Amazing Articles Here">
-                <button class="btn form-btn" type="submit">
-                    <i class="ri-search-line"></i>
-                </button>
-            </form>
-            <span class="form-note">Press Esc to Close.</span>
-        </div>
+      <div class="form-container-inner">
+        <form action="" class="form">
+          <input
+            type="text"
+            name=""
+            class="form-input"
+            placeholder="Search our Amazing Articles Here"
+          />
+          <button class="btn form-btn" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <span class="form-note">Press Esc to Close.</span>
+      </div>
 
-        <button class="btn form-close-btn place-items-center" id="form-close-btn">
-            <i class="ri-close-line"></i>
-        </button>
+      <button class="btn form-close-btn place-items-center" id="form-close-btn">
+        <i class="ri-close-line"></i>
+      </button>
     </div>
-<!-- navbar end -->
+    
 
     <!-- Top articles -->
     <section class="featured-articles section-header-offset">
+      <div class="featured-articles-container container d-grid">
+        <div class="featured-content d-grid">
+          <!-- article 1 link -->
+          <a
+            href="./posts/our_skies.html"
+            class="article featured-article featured-article-1"
+          >
+            <img
+              src="./assets/images/meandkite.jpg"
+              alt=""
+              class="article-image"
+            />
 
-        <div class="featured-articles-container container d-grid">
+            <div class="article-data-container">
+              <div class="article-data">
+                <h3 class="title article-title font">Our Skies Above</h3>
+                <span>Sun 31</span>
+                <span class="article-data-spacer"></span>
+                <span>11 min read</span>
+              </div>
 
-            <div class="featured-content d-grid">
-                <div class="headline-banner">
-                    <h3 class="headline fancy-border">
-                        <span class="place-items-center">Top Articles</span>
-                    </h3>
-                    <span class="headline-description">searching thru the mind of ceoDemitri...</span>
-                </div>
+              <span class="article-category">Kosmos</span>
+            </div>
+          </a>
 
-                <!-- article 1 link -->
-                <a href="./posts/our_skies.html" class="article featured-article featured-article-1">
-                    <img src="./assets/images/meandkite.jpg" alt="" class="article-image">
-                    <span class="article-category">Kosmos</span>
+          <!-- article 2 link -->
+          <a
+            href="./post.html"
+            class="article featured-article featured-article-2"
+          >
+            <img
+              src="./assets/images/snow-rise.jpeg"
+              alt=""
+              class="article-image"
+            />
 
-                    <div class="article-data-container">
+            <div class="article-data-container">
+              <div class="article-data">
+                <h3 class="title article-title font">Loki and Thor</h3>
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>8 min read</span>
+              </div>
 
-                        <div class="article-data">
-                            <span>Sun 31</span>
-                            <span class="article-data-spacer"></span>
-                            <span>11 min read</span>
-                        </div>
+              <span class="article-category">Mythology</span>
+            </div>
+          </a>
 
-                        <h3 class="title article-title font">Our Skies Above</h3>
-                    </div>
-                </a>
+          <!-- article 3 link -->
+          <a
+            href="./post.html"
+            class="article featured-article featured-article-3"
+          >
+            <img
+              src="./assets/images/oceanview.jpg"
+              alt=""
+              class="article-image"
+            />
 
-                <!-- article 2 link -->
-                <a href="./post.html" class="article featured-article featured-article-2">
-                    <img src="./assets/images/snow-rise.jpeg" alt="" class="article-image">
-                    <span class="article-category">Mythology</span>
+            <div class="article-data-container">
+              <div class="article-data">
+                <h3 class="title article-title font">The Ocean World</h3>
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>5 min read</span>
+              </div>
 
-                    <div class="article-data-container">
+              <span class="article-category">Waters</span>
+            </div>
+          </a>
+        </div>
 
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>8 min read</span>
-                        </div>
+        <!-- Sidebar: Trending -->
+        <!-- this area is designed for five articles: three visible -->
+        <!-- i have muted the other articles in this section, to test the responsiveness of the container and to add content as it exists. no articles exist there yet. -->
+        <div class="sidebar d-grid">
+          <h3 class="title featured-content-title">Trending</h3>
 
-                        <h3 class="title article-title font">Loki and Thor</h3>
-                    </div>
-                </a>
-
-                <!-- article 3 link -->
-                <a href="./post.html" class="article featured-article featured-article-3">
-                    <img src="./assets/images/oceanview.jpg" alt="" class="article-image">
-                    <span class="article-category">Waters</span>
-
-                    <div class="article-data-container">
-
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>5 min read</span>
-                        </div>
-
-                        <h3 class="title article-title font">The Ocean World</h3>
-                    </div>
-                </a>
+          <a href="#" class="trending-news-box">
+            <div class="trending-news-image-box">
+              <span class="trending-number place-items-center">01</span>
+              <img
+                src="./assets/images/trending/coder.jpg"
+                alt=""
+                class="article-image"
+              />
             </div>
 
-            <!-- Sidebar: Trending -->
-            <!-- this area is designed for five articles: three visible -->
-            <!-- i have muted the other articles in this section, to test the responsiveness of the container and to add content as it exists. no articles exist there yet. -->
-            <div class="sidebar d-grid">
-                <h3 class="title featured-content-title">Trending</h3>
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>7 min read</span>
+              </div>
 
-                <a href="#" class="trending-news-box">
-                    <div class="trending-news-image-box">
-                        <span class="trending-number place-items-center">01</span>
-                        <img src="./assets/images/trending/coder.jpg" alt="" class="article-image">
-                    </div>
+              <h3 class="title article-title">Developers: Next step</h3>
+            </div>
+          </a>
 
-                    <div class="trending-news-data">
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>7 min read</span>
-                        </div>
+          <a href="#" class="trending-news-box">
+            <div class="trending-news-image-box">
+              <span class="trending-number place-items-center">02</span>
+              <img
+                src="./assets/images/trending/sky.jpeg"
+                alt=""
+                class="article-image"
+              />
+            </div>
 
-                        <h3 class="title article-title">Developers: Next step</h3>
-                    </div>
-                </a>
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>5 min read</span>
+              </div>
 
-                <a href="#" class="trending-news-box">
-                    <div class="trending-news-image-box">
-                        <span class="trending-number place-items-center">02</span>
-                        <img src="./assets/images/trending/sky.jpeg" alt="" class="article-image">
-                    </div>
+              <h3 class="title article-title">Sample</h3>
+            </div>
+          </a>
 
-                    <div class="trending-news-data">
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>5 min read</span>
-                        </div>
+          <a href="#" class="trending-news-box">
+            <div class="trending-news-image-box">
+              <span class="trending-number place-items-center">03</span>
+              <img
+                src="./assets/images/trending/trending_1.jpg"
+                alt=""
+                class="article-image"
+              />
+            </div>
 
-                        <h3 class="title article-title">Sample</h3>
-                    </div>
-                </a>
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>5 min read</span>
+              </div>
 
-                <a href="#" class="trending-news-box">
-                    <div class="trending-news-image-box">
-                        <span class="trending-number place-items-center">03</span>
-                        <img src="./assets/images/trending/trending_1.jpg" alt="" class="article-image">
-                    </div>
+              <h3 class="title article-title">Sample</h3>
+            </div>
+          </a>
 
-                    <div class="trending-news-data">
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>5 min read</span>
-                        </div>
-
-                        <h3 class="title article-title">Sample</h3>
-                    </div>
-                </a>
-
-                <!-- <a href="#" class="trending-news-box">
+          <!-- <a href="#" class="trending-news-box">
                     <div class="trending-news-image-box">
                         <span class="trending-number place-items-center">04</span>
                         <img src="./assets/images/trending/trending_1.jpg" alt="" class="article-image">
@@ -260,375 +303,472 @@
                         <h3 class="title article-title">Sample</h3>
                     </div>
                 </a> -->
-            </div>
         </div>
+      </div>
     </section>
 
     <!-- quick read -->
     <section class="quick-read section">
-        <div class="container">
-            <h2 class="section-title title" data-name="Quick Read">
-                Quick Read
-            </h2>
+      <div class="container">
+        <h2 class="section-title title" data-name="Quick Read">Quick Read</h2>
 
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <a href="#" class="article swiper-slide">
-                        <img src="./assets/images/quick/quick_read_2.jpg" alt="" class="article-image">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <a href="#" class="article swiper-slide">
+              <img
+                src="./assets/images/quick/quick_read_2.jpg"
+                alt=""
+                class="article-image"
+              />
 
-                        <div class="article-data-container">
-
-                            <div class="article-data">
-                                <span>Mon 2</span>
-                                <span class="article-data-spacer"></span>
-                                <span>5 min read</span>
-                            </div>
-    
-                            <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="article swiper-slide">
-                        <img src="./assets/images/quick/3.jpg" alt="" class="article-image">
-
-                        <div class="article-data-container">
-
-                            <div class="article-data">
-                                <span>Mon 2</span>
-                                <span class="article-data-spacer"></span>
-                                <span>5 min read</span>
-                            </div>
-    
-                            <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="article swiper-slide">
-                        <img src="./assets/images/quick/4.jpg" alt="" class="article-image">
-
-                        <div class="article-data-container">
-
-                            <div class="article-data">
-                                <span>Mon 2</span>
-                                <span class="article-data-spacer"></span>
-                                <span>5 min read</span>
-                            </div>
-    
-                            <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="article swiper-slide">
-                        <img src="./assets/images/quick/quick_read_1.jpg" alt="" class="article-image">
-
-                        <div class="article-data-container">
-
-                            <div class="article-data">
-                                <span>Mon 2</span>
-                                <span class="article-data-spacer"></span>
-                                <span>5 min read</span>
-                            </div>
-    
-                            <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="article swiper-slide">
-                        <img src="./assets/images/quick/quick_read_1.jpg" alt="" class="article-image">
-
-                        <div class="article-data-container">
-
-                            <div class="article-data">
-                                <span>Mon 2</span>
-                                <span class="article-data-spacer"></span>
-                                <span>5 min read</span>
-                            </div>
-    
-                            <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        </div>
-                    </a>
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>Mon 2</span>
+                  <span class="article-data-spacer"></span>
+                  <span>5 min read</span>
                 </div>
 
-                <div class="swiper-button-prev swiper-control"></div>
-                <div class="swiper-button-next swiper-control"></div>
+                <h3 class="title article-title font">
+                  Am I going to be the key to the future?
+                </h3>
+              </div>
+            </a>
 
-                <div class="swiper-pagination"></div>
-            </div>
+            <a href="#" class="article swiper-slide">
+              <img
+                src="./assets/images/quick/3.jpg"
+                alt=""
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>Mon 2</span>
+                  <span class="article-data-spacer"></span>
+                  <span>5 min read</span>
+                </div>
+
+                <h3 class="title article-title font">
+                  Am I going to be the key to the future?
+                </h3>
+              </div>
+            </a>
+
+            <a href="#" class="article swiper-slide">
+              <img
+                src="./assets/images/quick/4.jpg"
+                alt=""
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>Mon 2</span>
+                  <span class="article-data-spacer"></span>
+                  <span>5 min read</span>
+                </div>
+
+                <h3 class="title article-title font">
+                  Am I going to be the key to the future?
+                </h3>
+              </div>
+            </a>
+
+            <a href="#" class="article swiper-slide">
+              <img
+                src="./assets/images/quick/quick_read_1.jpg"
+                alt=""
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>Mon 2</span>
+                  <span class="article-data-spacer"></span>
+                  <span>5 min read</span>
+                </div>
+
+                <h3 class="title article-title font">
+                  Am I going to be the key to the future?
+                </h3>
+              </div>
+            </a>
+
+            <a href="#" class="article swiper-slide">
+              <img
+                src="./assets/images/quick/quick_read_1.jpg"
+                alt=""
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>Mon 2</span>
+                  <span class="article-data-spacer"></span>
+                  <span>5 min read</span>
+                </div>
+
+                <h3 class="title article-title font">
+                  Am I going to be the key to the future?
+                </h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-button-prev swiper-control"></div>
+          <div class="swiper-button-next swiper-control"></div>
+
+          <div class="swiper-pagination"></div>
         </div>
+      </div>
     </section>
 
     <!-- older post section -->
     <section class="older-posts section">
-        <div class="container">
-            <h2 class="title section-title" data-name="Older Posts">Older Posts</h2>
+      <div class="container">
+        <h2 class="title section-title" data-name="Older Posts">Older Posts</h2>
 
-            <div class="older-posts-grid-wrapper d-grid">
-                <a href="#" class="article d-grid">
-                    <div class="older-posts-article-image-wrapper">
-                        <img src="./assets/images/older_posts/older_post_1.webp" alt="" class="article-image">
-                    </div>
-
-                    <div class="article-data-container">
-
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>5 min read</span>
-                        </div>
-
-                        <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        <p class="article-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dignissimos hic nemo illo, molestias vero atque incidunt, laboriosam iste minus.</p>
-                    </div>
-                </a>
-
-                <a href="#" class="article d-grid">
-                    <div class="older-posts-article-image-wrapper">
-                        <img src="./assets/images/older_posts/older_post_1.webp" alt="" class="article-image">
-                    </div>
-
-                    <div class="article-data-container">
-
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>5 min read</span>
-                        </div>
-
-                        <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        <p class="article-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dignissimos hic nemo illo, molestias vero atque incidunt, laboriosam iste minus.</p>
-                    </div>
-                </a>
-
-                <a href="#" class="article d-grid">
-                    <div class="older-posts-article-image-wrapper">
-                        <img src="./assets/images/older_posts/older_post_1.webp" alt="" class="article-image">
-                    </div>
-
-                    <div class="article-data-container">
-
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>5 min read</span>
-                        </div>
-
-                        <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        <p class="article-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dignissimos hic nemo illo, molestias vero atque incidunt, laboriosam iste minus.</p>
-                    </div>
-                </a>
-
-                <a href="#" class="article d-grid">
-                    <div class="older-posts-article-image-wrapper">
-                        <img src="./assets/images/older_posts/older_post_1.webp" alt="" class="article-image">
-                    </div>
-
-                    <div class="article-data-container">
-
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>5 min read</span>
-                        </div>
-
-                        <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        <p class="article-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dignissimos hic nemo illo, molestias vero atque incidunt, laboriosam iste minus.</p>
-                    </div>
-                </a>
-
-                <a href="#" class="article d-grid">
-                    <div class="older-posts-article-image-wrapper">
-                        <img src="./assets/images/older_posts/older_post_1.webp" alt="" class="article-image">
-                    </div>
-
-                    <div class="article-data-container">
-
-                        <div class="article-data">
-                            <span>Mon 2</span>
-                            <span class="article-data-spacer"></span>
-                            <span>5 min read</span>
-                        </div>
-
-                        <h3 class="title article-title font">Am I going to be the key to the future?</h3>
-                        <p class="article-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dignissimos hic nemo illo, molestias vero atque incidunt, laboriosam iste minus.</p>
-                    </div>
-                </a>
+        <div class="older-posts-grid-wrapper d-grid">
+          <a href="#" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./assets/images/older_posts/older_post_1.webp"
+                alt=""
+                class="article-image"
+              />
             </div>
 
-            <div class="see-more-container">
-                <a href="" class="btn see-more-btn place-items-center">
-                    See more <i class="ri-arrow-right-s-line"></i>
-                </a>
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>5 min read</span>
+              </div>
+
+              <h3 class="title article-title font">
+                Am I going to be the key to the future?
+              </h3>
+              <p class="article-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                dignissimos hic nemo illo, molestias vero atque incidunt,
+                laboriosam iste minus.
+              </p>
             </div>
+          </a>
+
+          <a href="#" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./assets/images/older_posts/older_post_1.webp"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>5 min read</span>
+              </div>
+
+              <h3 class="title article-title font">
+                Am I going to be the key to the future?
+              </h3>
+              <p class="article-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                dignissimos hic nemo illo, molestias vero atque incidunt,
+                laboriosam iste minus.
+              </p>
+            </div>
+          </a>
+
+          <a href="#" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./assets/images/older_posts/older_post_1.webp"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>5 min read</span>
+              </div>
+
+              <h3 class="title article-title font">
+                Am I going to be the key to the future?
+              </h3>
+              <p class="article-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                dignissimos hic nemo illo, molestias vero atque incidunt,
+                laboriosam iste minus.
+              </p>
+            </div>
+          </a>
+
+          <a href="#" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./assets/images/older_posts/older_post_1.webp"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>5 min read</span>
+              </div>
+
+              <h3 class="title article-title font">
+                Am I going to be the key to the future?
+              </h3>
+              <p class="article-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                dignissimos hic nemo illo, molestias vero atque incidunt,
+                laboriosam iste minus.
+              </p>
+            </div>
+          </a>
+
+          <a href="#" class="article d-grid">
+            <div class="older-posts-article-image-wrapper">
+              <img
+                src="./assets/images/older_posts/older_post_1.webp"
+                alt=""
+                class="article-image"
+              />
+            </div>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>Mon 2</span>
+                <span class="article-data-spacer"></span>
+                <span>5 min read</span>
+              </div>
+
+              <h3 class="title article-title font">
+                Am I going to be the key to the future?
+              </h3>
+              <p class="article-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+                dignissimos hic nemo illo, molestias vero atque incidunt,
+                laboriosam iste minus.
+              </p>
+            </div>
+          </a>
         </div>
+
+        <div class="see-more-container">
+          <a href="" class="btn see-more-btn place-items-center">
+            See more <i class="ri-arrow-right-s-line"></i>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- popular post -->
     <section class="popular-tags section">
-        <div class="container">
-            <h2 class="title section-title" data-name="Popular tags">Popular tags</h2>
-            <div class="popular-tags-container d-grid">
-                <a href="" class="article">
-                    <span class="tag-name">#travel</span>
-                    <img src="./assets/images/tags/owl.png" alt="" class="article-image">
-                </a>
+      <div class="container">
+        <h2 class="title section-title" data-name="Popular tags">
+          Popular tags
+        </h2>
+        <div class="popular-tags-container d-grid">
+          <a href="" class="article">
+            <span class="tag-name">#travel</span>
+            <img
+              src="./assets/images/tags/owl.png"
+              alt=""
+              class="article-image"
+            />
+          </a>
 
-                <a href="" class="article">
-                    <span class="tag-name">#food</span>
-                    <img src="./assets/images/tags/owl.png" alt="" class="article-image">
-                </a>
+          <a href="" class="article">
+            <span class="tag-name">#food</span>
+            <img
+              src="./assets/images/tags/owl.png"
+              alt=""
+              class="article-image"
+            />
+          </a>
 
-                <a href="" class="article">
-                    <span class="tag-name">#technology</span>
-                    <img src="./assets/images/tags/owl.png" alt="" class="article-image">
-                </a>
+          <a href="" class="article">
+            <span class="tag-name">#technology</span>
+            <img
+              src="./assets/images/tags/owl.png"
+              alt=""
+              class="article-image"
+            />
+          </a>
 
-                <a href="" class="article">
-                    <span class="tag-name">#vision</span>
-                    <img src="./assets/images/tags/owl.png" alt="" class="article-image">
-                </a>
+          <a href="" class="article">
+            <span class="tag-name">#vision</span>
+            <img
+              src="./assets/images/tags/owl.png"
+              alt=""
+              class="article-image"
+            />
+          </a>
 
-                <a href="" class="article">
-                    <span class="tag-name">#dreams</span>
-                    <img src="./assets/images/tags/owl.png" alt="" class="article-image">
-                </a>
-            </div>
+          <a href="" class="article">
+            <span class="tag-name">#dreams</span>
+            <img
+              src="./assets/images/tags/owl.png"
+              alt=""
+              class="article-image"
+            />
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- newsletter section -->
     <section class="newsletter section">
-        <div class="container">
-            <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
-            <div class="form-container-inner">
-                <h6 class="title newsletter-title">Subscribe to Nature</h6>
-                <p class="newsletter-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ea optio suscipit delectus obcaecati.</p>
-                
-                <form action="" class="form">
-                    <input type="text" class="form-input" placeholder="Enter your email address">
-                    <button class="btn form-btn" type="submit">
-                        <i class="ri-mail-send-line"></i>
-                    </button>
-                </form>
-            </div>
+      <div class="container">
+        <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+        <div class="form-container-inner">
+          <h6 class="title newsletter-title">Subscribe to Nature</h6>
+          <p class="newsletter-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ea
+            optio suscipit delectus obcaecati.
+          </p>
+
+          <form action="" class="form">
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Enter your email address"
+            />
+            <button class="btn form-btn" type="submit">
+              <i class="ri-mail-send-line"></i>
+            </button>
+          </form>
         </div>
+      </div>
     </section>
 
-    
-    
     <!-- footer -->
     <footer class="footer section">
-        <div class="footer-container container d-grid">
-            <div class="company-data">
-                <a href=".index.html">
-                    <h2 class="logo font">Nature</h2>
-                </a>
-                <p class="company-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur dolorem fugit vitae veniam! Sed, asperiores eos. 
-                </p>
-                <ul class="list social-media">
-                    <li class="list-item">
-                        <a href="#" class="list-link">
-                            <i class="ri-instagram-line"></i>
-                            <i class="ri-twitter-line"></i>
-                            <i class="ri-pinterest-line"></i>
-                        </a>
-                    </li>
-                </ul>
+      <div class="footer-container container d-grid">
+        <div class="company-data">
+          <a href=".index.html">
+            <h2 class="logo font">Nature</h2>
+          </a>
+          <p class="company-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            aspernatur dolorem fugit vitae veniam! Sed, asperiores eos.
+          </p>
+          <ul class="list social-media">
+            <li class="list-item">
+              <a href="#" class="list-link">
+                <i class="ri-instagram-line"></i>
+                <i class="ri-twitter-line"></i>
+                <i class="ri-pinterest-line"></i>
+              </a>
+            </li>
+          </ul>
 
-                <span class="copyright-notice">&copy; 2024 Nature. All Rights Reserved.</span>
-            </div>
-
-            <div>
-                <h6 class="title footer-title">Categories</h6>
-
-                <ul class="list footer-list">
-                    <li class="list-item">
-                        <a href="#" class="list-link">Philosophy</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Mythology</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Kosmos</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Waters</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Animals</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Science</a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div>
-                <h6 class="title footer-title">Company</h6>
-
-                <ul class="list footer-list">
-                    <li class="list-item">
-                        <a href="#" class="list-link">Gallery</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h6 class="title footer-title">Useful Links</h6>
-
-                <ul class="list footer-list">
-                    <li class="list-item">
-                        <a href="#" class="list-link">To Code</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sample Item</a>
-                    </li>
-                </ul>
-            </div>
+          <span class="copyright-notice"
+            >&copy; 2024 Nature. All Rights Reserved.</span
+          >
         </div>
+
+        <div>
+          <h6 class="title footer-title">Categories</h6>
+
+          <ul class="list footer-list">
+            <li class="list-item">
+              <a href="#" class="list-link">Philosophy</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Mythology</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Kosmos</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Waters</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Animals</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Science</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Company</h6>
+
+          <ul class="list footer-list">
+            <li class="list-item">
+              <a href="#" class="list-link">Gallery</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Useful Links</h6>
+
+          <ul class="list footer-list">
+            <li class="list-item">
+              <a href="#" class="list-link">To Code</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+
+            <li class="list-item">
+              <a href="#" class="list-link">Sample Item</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
     <!-- swiper.js -->
@@ -636,7 +776,7 @@
 
     <!-- my scripts -->
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
 
 <!-- start to create the folder structure for posts -->

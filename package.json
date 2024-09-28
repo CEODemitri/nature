@@ -1,0 +1,14 @@
+{
+  "name": "nature",
+  "module": "index.js",
+  "scripts": {
+    "ceoDemitri": "bun run index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module"
+}
