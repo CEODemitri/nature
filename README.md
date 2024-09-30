@@ -30,3 +30,6 @@ next:
 2. Upgrade logo In Navbar?
 3. Login Button/Sign Up + Modal or Page?
 4. Jumbotron Update. Move Search Bar
+
+9 29
+Redesign in progress. Hard work but fun.
