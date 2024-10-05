@@ -2,7 +2,7 @@
   "name": "nature",
   "module": "index.js",
   "scripts": {
-    "ceoDemitri": "bun run index.js"
+    "start": "nodemon --exec bun index.js"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -10,5 +10,8 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "nodemon": "^3.1.7"
+  }
 }

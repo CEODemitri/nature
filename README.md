@@ -33,3 +33,7 @@ next:
 
 9 29
 Redesign in progress. Hard work but fun.
+
+10 05
+
+- [ ] cards
