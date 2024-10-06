@@ -362,7 +362,7 @@ body.light-theme {
 .article-data-container {
     background-color: #ffffff20;
     transition: background-color .5s;
-    border-radius: 0.3em;
+    border-radius: 0 0 16px 16px;
     backdrop-filter: blur(0.3em);
     border: 1px solid #ffffff20;
 
@@ -378,6 +378,7 @@ body.light-theme {
 
 .article:hover .article-data-container {
     background-color: var(--hover-dark-color);
+
 }
 
 .article:hover .article-data-spacer {
@@ -902,7 +903,7 @@ body.light-theme {
     }
 }
 
-/* @media screen and (min-width: 1199px){
+@media screen and (min-width: 1199px){
     .older-posts-grid-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -917,5 +918,5 @@ body.light-theme {
         grid-column: 1/3;
         grid-row: 2/-1;
     }
-} */
+}
 

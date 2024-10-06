@@ -37,3 +37,8 @@ Redesign in progress. Hard work but fun.
 10 05
 
 - [ ] cards
+- featured content section fail
+
+1. attempt to control size of trending area, fail
+2. control max size of feature img, fail
+3. control over what i was doing, sporadic.
