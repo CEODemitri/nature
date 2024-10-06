@@ -1,7 +1,7 @@
 import { fileURLToPath } from "url";
 import { dirname, join, parse } from "path";
 import { existsSync, readFileSync } from "fs";
-import Bun from "bun";
+import un from "bun";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

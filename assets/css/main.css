@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
 
 /* 
     #D3D5D4 Timberwolf
@@ -21,6 +24,7 @@
     );
     --transparent-light-color: hsl(187, 33%, 74%);
     --transparent-dark-color: hsl(188, 11%, 40%);
+    --title-font: 'Gruppo';
     --heading-font: 'Lobster';
     --page-font: 'Raleway';
     --font-size-xsm: 1.2rem;
@@ -203,8 +207,35 @@ body.light-theme {
 }
 
 .hero {
+    margin: 0 auto;
     margin-top: 4em;
     text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    p, .headline-banner {
+        width: 50%;
+        margin: auto;
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 52px;
+    }
+}
+
+.hero-title {
+    font-size: 80px;
+    font-weight: 300;
+    font-family: var(--title-font);
+
+    span {
+        font-family: "Gloock";
+    }
 }
 
 .search {
@@ -273,6 +304,21 @@ body.light-theme {
 
 .sm-text {
     font-size: var(--font-size-xsm);
+}
+
+.hero-img {    
+    width: 80vw;
+    height: 325px;
+    margin: auto;
+    border-radius: 1em;
+    margin-top: 5em;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+    }
 }
 
 /* Javascript Form Styles */
@@ -816,7 +862,7 @@ body.light-theme {
     }
 
     .older-posts .article {
-        grid-template-columns: 25rem 1fr;
+        grid-template-columns: 15rem 1fr;
     }
 
     .older-posts-article-image-wrapper {
@@ -830,6 +876,26 @@ body.light-theme {
 
 /* web */
 @media screen and (min-width: 1024px) {
+    .featured-content .article-image {
+            height: 400px;
+            /* Set a fixed height */
+            width: auto;
+            /* Maintain aspect ratio */
+            object-fit: cover;
+            /* Cover the area without stretching */
+        }
+    
+        .featured-content {
+            overflow: hidden;
+            /* Prevent overflow from large images */
+        }
+    
+        /* Optional: Adjust article/card height if needed */
+        .featured-content .article {
+            min-height: 500px;
+            /* Adjust height if necessary */
+        }
+
     .menu {
         position: initial;
         width: initial;
@@ -866,7 +932,7 @@ body.light-theme {
     }
 
     .featured-articles-container {
-        grid-template-columns: 1fr 40rem;
+        grid-template-columns: 2fr 40rem;
     }
 
     .trending-news-image-box {
@@ -909,7 +975,7 @@ body.light-theme {
     }
 }
 
-@media screen and (min-width: 1500px){
+/* @media screen and (min-width: 1500px){
     .featured-article {
         grid-column: 3/-1;
     }
@@ -918,5 +984,5 @@ body.light-theme {
         grid-column: 1/3;
         grid-row: 2/-1;
     }
-}
+} */
 

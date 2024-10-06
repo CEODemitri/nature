@@ -42,3 +42,10 @@ Redesign in progress. Hard work but fun.
 1. attempt to control size of trending area, fail
 2. control max size of feature img, fail
 3. control over what i was doing, sporadic.
+
+10 06
+
+1. nodemon still not working for the way i need it
+2. new hero section content and layout
+3. shrinks the size of the article images to shrink the featured content section. horrible hack
+4. new fonts uploaded, Gruppo, Gloock

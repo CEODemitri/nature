@@ -7,10 +7,10 @@
     <title>Nature | Blog about Our World</title>
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- bootstrap -->
     <link
@@ -49,59 +49,85 @@
   <body>
     <!-- navbar start -->
     <header class="header" id="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a href="/">
-                    <h2 class="logo font mx-5">Nature</h2>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./pages/categories/index.html" class="nav-link">Categories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./pages/gallery/index.html" class="nav-link">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./pages/about/index.html" class="nav-link">About</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">
-                            Search
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a href="/">
+            <h2 class="logo font mx-5">Nature</h2>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./pages/categories/index.html" class="nav-link"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./pages/gallery/index.html" class="nav-link"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./pages/about/index.html" class="nav-link">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- navbar end -->
 
     <div class="py-5 hero">
-        <h1 class="display-1 fw-bold">Peace of Mind</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-                popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-                extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
-                <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
-            </div>
-            <div class="headline-banner mt-5">
-                <h3 class="headline fancy-border">
-                    <span class="place-items-center">Top Articles</span>
-                </h3>
-                <span class="headline-description">searching thru the mind of ceoDemitri...</span>
-            </div>
-        </div>
+      <h1 class="hero-title"><span class="">mindful</span> thinking</h1>
+      <p class="fs-5 mb-4">
+        Quickly design and customize responsive mobile-first sites with
+        Bootstrap, the world’s most popular front-end open source toolkit,
+        featuring Sass variables and mixins, grid system, extensive prebuilt
+        components, and powerful JavaScript plugins.
+      </p>
+      <div class="headline-banner mt-5">
+        <h3 class="headline fancy-border">
+          <span class="place-items-center">Top Articles</span>
+        </h3>
+        <span class="headline-description"
+          >search a topic to find articles...</span
+        >
+      </div>
+      <ul class="hero-tag">
+        <li>Animals</li>
+        <li>Plants</li>
+        <li>Academics</li>
+        <li>Earth</li>
+        <li>Kosmos</li>
+      </ul>
+
+      <div class="hero-img">
+        <img src="/assets/images/theme1.jpeg" alt="">
+      </div>
     </div>
 
     <!-- this div is only visible when the search icon in the navbar is clicked -->
@@ -125,7 +151,6 @@
         <i class="ri-close-line"></i>
       </button>
     </div>
-    
 
     <!-- Top articles -->
     <section class="featured-articles section-header-offset">
@@ -144,8 +169,11 @@
 
             <div class="article-data-container">
               <div class="article-header">
-                <p>Lonsectetur adipisicing elit. Quatur doloribus fugit molestias facilis quam officia
-                  temporibus tempore minima eaque debitis, ipsa culpa!</p>
+                <p>
+                  Lonsectetur adipisicing elit. Quatur doloribus fugit molestias
+                  facilis quam officia temporibus tempore minima eaque debitis,
+                  ipsa culpa!
+                </p>
                 <h3 class="title article-title font">Our Skies Above</h3>
               </div>
               <div class="article-data">
@@ -156,15 +184,18 @@
                 </div>
 
                 <div class="color-data">
-                  <img src="https://pbs.twimg.com/profile_images/1640408409081036806/vKRRmP4k_400x400.jpg" alt="author" width="45" height="45"> 
+                  <img
+                    src="https://pbs.twimg.com/profile_images/1640408409081036806/vKRRmP4k_400x400.jpg"
+                    alt="author"
+                    width="45"
+                    height="45"
+                  />
                   <section>
                     <span>ceoDemitri</span>
                     <span class="sm-text">Sun 31</span>
                   </section>
                 </div>
               </div>
-
-              
             </div>
           </a>
 
@@ -181,8 +212,11 @@
 
             <div class="article-data-container">
               <div class="article-header">
-                <p>Lonsectetur adipisicing elit. Quatur doloribus fugit molestias facilis quam officia
-                  temporibus tempore minima eaque debitis, ipsa culpa!</p>
+                <p>
+                  Lonsectetur adipisicing elit. Quatur doloribus fugit molestias
+                  facilis quam officia temporibus tempore minima eaque debitis,
+                  ipsa culpa!
+                </p>
                 <h3 class="title article-title font">Our Skies Above</h3>
               </div>
               <div class="article-data">
@@ -191,18 +225,20 @@
                   <span class="article-data-spacer"></span>
                   <span class="sm-text">11 min read</span>
                 </div>
-            
+
                 <div class="color-data">
-                  <img src="https://pbs.twimg.com/profile_images/1640408409081036806/vKRRmP4k_400x400.jpg" alt="author" width="45"
-                    height="45">
+                  <img
+                    src="https://pbs.twimg.com/profile_images/1640408409081036806/vKRRmP4k_400x400.jpg"
+                    alt="author"
+                    width="45"
+                    height="45"
+                  />
                   <section>
                     <span>ceoDemitri</span>
                     <span class="sm-text">Sun 31</span>
                   </section>
                 </div>
               </div>
-            
-            
             </div>
           </a>
 
@@ -219,8 +255,11 @@
 
             <div class="article-data-container">
               <div class="article-header">
-                <p>Lonsectetur adipisicing elit. Quatur doloribus fugit molestias facilis quam officia
-                  temporibus tempore minima eaque debitis, ipsa culpa!</p>
+                <p>
+                  Lonsectetur adipisicing elit. Quatur doloribus fugit molestias
+                  facilis quam officia temporibus tempore minima eaque debitis,
+                  ipsa culpa!
+                </p>
                 <h3 class="title article-title font">Our Skies Above</h3>
               </div>
               <div class="article-data">
@@ -229,18 +268,20 @@
                   <span class="article-data-spacer"></span>
                   <span class="sm-text">11 min read</span>
                 </div>
-            
+
                 <div class="color-data">
-                  <img src="https://pbs.twimg.com/profile_images/1640408409081036806/vKRRmP4k_400x400.jpg" alt="author" width="45"
-                    height="45">
+                  <img
+                    src="https://pbs.twimg.com/profile_images/1640408409081036806/vKRRmP4k_400x400.jpg"
+                    alt="author"
+                    width="45"
+                    height="45"
+                  />
                   <section>
                     <span>ceoDemitri</span>
                     <span class="sm-text">Sun 31</span>
                   </section>
                 </div>
               </div>
-            
-            
             </div>
           </a>
         </div>
