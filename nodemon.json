@@ -1,5 +1,4 @@
 {
   "watch": ["src"],
-  "ext": "js,html",
-  "ignore": ["*.test.js"]
+  "ext": "js,html"
 }
