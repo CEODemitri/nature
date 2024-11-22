@@ -134,6 +134,8 @@ body.light-theme {
 
 .logo {
     font-size: var(--font-size-md);
+    position: absolute;
+    top: 12px;
 }
 
 .menu {
@@ -372,7 +374,7 @@ body.light-theme {
     left: 0;
     width: 200%;
     height: 100%;
-    background: var(--gradient-color);
+    background: var(--hover-dark-color);
     background-size: 50% 100%;
     z-index: 5;
 }

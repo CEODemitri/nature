@@ -52,8 +52,10 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <a href="/">
-            <h2 class="logo font mx-5">Nature</h2>
+            <h2 class="logo font">Nature</h2>
           </a>
+
+          <!-- hamburger menu -->
           <button
             class="navbar-toggler"
             type="button"
@@ -65,8 +67,9 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav gap-2 sm-text mx-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page">Home</a>
               </li>
@@ -84,17 +87,6 @@
                 <a href="./pages/about/index.html" class="nav-link">About</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
@@ -102,7 +94,14 @@
     <!-- navbar end -->
 
     <div class="py-5 hero">
-      <h1 class="hero-title"><span class="">mindful</span> thinking</h1>
+      <section class="d-flex">
+        <p class="sm-text">moonday, October 8, 2025</p>
+        <h1 class="hero-title"><span class="">mindful</span> thinking</h1>
+        <p>
+          <!-- icon -->
+           <span class="sm-text">Birmingham, Jotenheim</span>
+        </p>
+      </section>
       <p class="fs-5 mb-4">
         Quickly design and customize responsive mobile-first sites with
         Bootstrap, the world’s most popular front-end open source toolkit,
