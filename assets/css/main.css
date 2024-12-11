@@ -256,6 +256,7 @@ body.light-theme {
     opacity: 0;
     transform: scale(0);
     transition: opacity .5s;
+    border-radius: 16px;
 }
 
 .form-container-inner {
@@ -385,6 +386,11 @@ body.light-theme {
     display: inline-flex;
     padding: .6rem 1.5rem;
     background-color: var(--secondary-background-color);
+}
+
+.hero-tag li {
+    background-color: #afb6cd40;
+    padding: 0.3em;
 }
 
 .article {
